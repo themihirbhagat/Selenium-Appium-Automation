@@ -1,0 +1,8 @@
+/.settings
+/.target
+/target
+/.classpath
+/.factorypath
+/.vscode
+
+/test-output

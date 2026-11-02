@@ -1,0 +1,89 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.automation</groupId>
+	<artifactId>Selenium-Appium-Automation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+	
+		<env>dev</env> <!-- Default environment -->
+		<java-source.version>25</java-source.version>
+		<java-target.version>25</java-target.version>
+		<maven-compiler-plugin.version>3.16.0</maven-compiler-plugin.version>
+			
+		<testNG.version>7.12.0</testNG.version>
+
+		<selenium.version>4.50.0</selenium.version>
+		<appium.version>10.1.1</appium.version>
+
+		<project-lombok.version>1.18.48</project-lombok.version>
+
+		<apache-log4j.version>2.26.1</apache-log4j.version>
+
+		<rest-assured.version>6.3.0</rest-assured.version>
+		
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<goals>
+					<goal>compile</goal>
+				</goals>
+				<configuration>
+					<source>${java-source.version}</source>
+					<target>${java-target.version}</target>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<dependencies>
+		<!-- Selenium dependencies-->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+
+		<!-- Appium dependencies-->
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>${appium.version}</version>
+		</dependency>
+		<!-- Testing dependencies-->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testNG.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<!-- Logger dependencies-->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${apache-log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${apache-log4j.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>${rest-assured.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+</project>
