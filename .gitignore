@@ -1,8 +1,23 @@
-/.settings
 /.target
 /target
-/.classpath
+/test-output
+
+### Eclipse ###
+/.settings
 /.factorypath
+/.classpath
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
 /.vscode
 
-/test-output
+### Mac OS ###
+/.DS_Store
